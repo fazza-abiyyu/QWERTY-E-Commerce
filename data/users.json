@@ -24,5 +24,13 @@
     "refresh_tokens": [
       "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImIxYTJjM2Q0LWU1ZjYtNzg5MC1hYmNkLWVmMTIzNDU2Nzg5MCIsImlhdCI6MTc3ODAzNTMxMiwiZXhwIjoxNzc4NjQwMTEyfQ.oQThvublHS31bMiLtRAnuK4xsMmBAGSA6y48S5Nw0ss"
     ]
+  },
+  {
+    "id": "631712c3-1446-4398-aec1-2e3abe54b1e1",
+    "email": "test01@qwerty.com",
+    "password": "ef2d4e8c9edadc7c28a298408a087326b8457838bdee34654a5c8801447b5cfb",
+    "full_name": "Usert Test 1",
+    "role": "customer",
+    "created_at": "2026-05-06T23:55:45.666Z"
   }
 ]
