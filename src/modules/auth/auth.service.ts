@@ -6,7 +6,8 @@ import { SignJWT, jwtVerify } from 'jose';
 const userDb = new JsonHandler<User>('users.json');
 
 const hashPassword = (password: string) => {
-  return crypto.createHash('sha256').update(password).digest('hex');
+  const secret = process.env.JWT_SECRET || 'qwerty-super-secret-key-123456';
+  return crypto.createHmac('sha256', secret).update(password).digest('hex');
 };
 
 const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET || 'qwerty-super-secret-key-123456');
