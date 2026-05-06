@@ -3,6 +3,8 @@ import { ProductService } from '../../../src/modules/products/product.service';
 import StatusUpdater from '../../../components/admin/StatusUpdater';
 import { Package, User as UserIcon, Calendar, MapPin, Tag } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminOrdersPage({
   searchParams,
 }: {

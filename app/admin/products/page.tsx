@@ -1,6 +1,8 @@
 import { ProductService } from '../../../src/modules/products/product.service';
-import { Package, Plus, AlertCircle, ShoppingCart, Tag, ExternalLink } from 'lucide-react';
+import { Plus, Edit2, Trash2, Search, Filter, Package, AlertCircle, ShoppingCart, Tag, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+
+export const dynamic = 'force-dynamic';
 
 export default async function AdminProductsPage() {
   const products = await ProductService.getAll();

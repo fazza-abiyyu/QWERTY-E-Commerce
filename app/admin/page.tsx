@@ -5,6 +5,8 @@ import { User } from '../../src/modules/auth/auth.schema';
 import { DollarSign, ShoppingBag, Truck, Users, Clock, AlertTriangle, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 const userDb = new JsonHandler<User>('users.json');
 
 export default async function AdminDashboard() {

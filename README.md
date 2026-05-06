@@ -18,7 +18,7 @@ A modern, high-performance E-Commerce platform built with **Next.js 15** and **B
 
 ## 🛠️ Technology Stack
 
-- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
 - **Runtime**: [Bun](https://bun.sh/)
 - **Styling**: Vanilla CSS / Tailwind CSS
 - **Icons**: [Lucide React](https://lucide.dev/)

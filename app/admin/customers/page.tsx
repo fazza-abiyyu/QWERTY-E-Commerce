@@ -3,6 +3,8 @@ import { User } from '../../../src/modules/auth/auth.schema';
 import { OrderService } from '../../../src/modules/orders/order.service';
 import { Mail, MapPin, Calendar, ShoppingBag, User as UserIcon } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 const userDb = new JsonHandler<User>('users.json');
 
 export default async function AdminCustomersPage() {
