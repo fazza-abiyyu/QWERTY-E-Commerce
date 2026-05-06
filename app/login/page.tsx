@@ -1,5 +1,5 @@
 'use client';
-import { useState, Suspense } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useAuthStore } from '../../src/store/auth.store';
@@ -11,11 +11,21 @@ function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const user = useAuthStore((s) => s.user);
   const registered = searchParams.get('registered') === 'true';
   const [error, setError] = useState(
     searchParams.get('error') === 'unauthorized' ? 'Admin access required.' :
-    searchParams.get('error') === 'expired' ? 'Session expired. Please sign in again.' : ''
+    searchParams.get('error') === 'expired' ? 'Session expired. Please sign in again.' :
+    searchParams.get('error') === 'session_invalid' ? 'Session invalid. Please sign in.' : ''
   );
+
+  // Auto-redirect if already logged in
+  useEffect(() => {
+    if (user) {
+      const redirect = searchParams.get('redirect') || (user.role === 'admin' ? '/admin' : '/');
+      router.replace(redirect);
+    }
+  }, [user, router, searchParams]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
