@@ -1,0 +1,175 @@
+[
+  {
+    "id": "ORD-1777976839898-9140",
+    "user_id": "guest-user",
+    "items": [
+      {
+        "product_id": "prod-006",
+        "variant_sku": "BLT-BRN-M",
+        "quantity": 2,
+        "price": 220000
+      }
+    ],
+    "total_amount": 440000,
+    "shipping_address": "nnnnn",
+    "shipping_cost": 0,
+    "status": "pending",
+    "payment_token": "481ac156e7056f4cb101bca6185b66ad",
+    "payment_url": "/dummy-payment?token=481ac156e7056f4cb101bca6185b66ad",
+    "created_at": "2026-05-05T10:27:19.898Z",
+    "updated_at": "2026-05-05T10:27:19.898Z"
+  },
+  {
+    "id": "ORD-1777978167655-e2ae",
+    "user_id": "guest-user",
+    "items": [
+      {
+        "product_id": "prod-006",
+        "variant_sku": "BLT-BLK-S",
+        "quantity": 1,
+        "price": 220000
+      }
+    ],
+    "total_amount": 220000,
+    "shipping_address": "nnnmn",
+    "shipping_cost": 0,
+    "status": "pending",
+    "payment_token": "c2353598ebed11ba02a2a162a58a718f",
+    "payment_url": "/dummy-payment?token=c2353598ebed11ba02a2a162a58a718f",
+    "created_at": "2026-05-05T10:49:27.655Z",
+    "updated_at": "2026-05-05T10:49:27.655Z"
+  },
+  {
+    "id": "ORD-1777981524553-4caa",
+    "user_id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "items": [
+      {
+        "product_id": "prod-007",
+        "variant_sku": "TOTE-NAT",
+        "quantity": 1,
+        "price": 180000
+      }
+    ],
+    "total_amount": 180000,
+    "shipping_address": "AJsjahsa",
+    "shipping_cost": 0,
+    "status": "pending",
+    "payment_token": "93c37684de506a9d5aa07241e39e0257",
+    "payment_url": "/dummy-payment?token=93c37684de506a9d5aa07241e39e0257",
+    "created_at": "2026-05-05T11:45:24.553Z",
+    "updated_at": "2026-05-05T11:45:24.553Z"
+  },
+  {
+    "id": "ORD-1778027568540-bc8c",
+    "user_id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "items": [
+      {
+        "product_id": "prod-001",
+        "variant_sku": "SNEAK-WHT-40",
+        "quantity": 2,
+        "price": 500000
+      },
+      {
+        "product_id": "prod-006",
+        "variant_sku": "BLT-BLK-S",
+        "quantity": 1,
+        "price": 220000
+      },
+      {
+        "product_id": "prod-002",
+        "variant_sku": "JKT-DNM-M",
+        "quantity": 1,
+        "price": 850000
+      }
+    ],
+    "total_amount": 2070000,
+    "shipping_address": "Kakakaka",
+    "shipping_cost": 0,
+    "status": "pending",
+    "payment_url": "/midtrans-simulator?order_id=ORD-1778027568540-bc8c",
+    "created_at": "2026-05-06T00:32:48.542Z",
+    "updated_at": "2026-05-06T00:32:48.542Z"
+  },
+  {
+    "id": "ORD-1778028341896-022d",
+    "user_id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "items": [
+      {
+        "product_id": "prod-007",
+        "variant_sku": "TOTE-NAT",
+        "quantity": 1,
+        "price": 180000
+      }
+    ],
+    "total_amount": 180000,
+    "shipping_address": "jjnjnjnnj",
+    "shipping_cost": 0,
+    "status": "pending",
+    "payment_url": "/midtrans-simulator?order_id=ORD-1778028341896-022d",
+    "created_at": "2026-05-06T00:45:41.897Z",
+    "updated_at": "2026-05-06T01:10:05.928Z",
+    "payment_method": "bca_va",
+    "payment_code": "807758410721"
+  },
+  {
+    "id": "ORD-1778028462049-c934",
+    "user_id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "items": [
+      {
+        "product_id": "prod-009",
+        "variant_sku": "BOOT-BRN-41",
+        "quantity": 1,
+        "price": 1200000
+      }
+    ],
+    "total_amount": 1200000,
+    "shipping_address": "mnnknk",
+    "shipping_cost": 0,
+    "status": "paid",
+    "payment_url": "/midtrans-simulator?order_id=ORD-1778028462049-c934",
+    "created_at": "2026-05-06T00:47:42.049Z",
+    "updated_at": "2026-05-06T00:47:48.200Z"
+  },
+  {
+    "id": "ORD-1778028599248-f4d9",
+    "user_id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "items": [
+      {
+        "product_id": "prod-007",
+        "variant_sku": "TOTE-NAT",
+        "quantity": 2,
+        "price": 180000
+      }
+    ],
+    "total_amount": 360000,
+    "shipping_address": "kjjkjjkjk",
+    "shipping_cost": 0,
+    "status": "paid",
+    "payment_url": "/midtrans-simulator?order_id=ORD-1778028599248-f4d9",
+    "created_at": "2026-05-06T00:49:59.248Z",
+    "updated_at": "2026-05-06T01:06:04.592Z",
+    "payment_method": "bca_va",
+    "payment_code": "807782717533"
+  },
+  {
+    "id": "ORD-1778032173853-8bc2",
+    "user_id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "items": [
+      {
+        "product_id": "prod-001",
+        "variant_sku": "SNEAK-WHT-42",
+        "quantity": 1,
+        "price": 500000
+      }
+    ],
+    "total_amount": 500000,
+    "shipping_address": "Jl. Kenanga no 1, Gambir, Jakarta, Central Java",
+    "shipping_cost": 0,
+    "status": "paid",
+    "payment_url": "/midtrans-simulator?order_id=ORD-1778032173853-8bc2",
+    "created_at": "2026-05-06T01:49:33.854Z",
+    "updated_at": "2026-05-06T01:50:01.922Z",
+    "payment_method": "gopay",
+    "payment_code": "700177410865"
+  }
+]

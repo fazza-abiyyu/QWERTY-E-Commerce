@@ -1,0 +1,28 @@
+[
+  {
+    "id": "a67ef440-552c-4db5-9aa8-7ee9cc1ba042",
+    "email": "test1@mail.com",
+    "password": "937e8d5fbb48bd4949536cd65b8d35c426b80d2f830c5c308e2cdec422ae2244",
+    "full_name": "user test",
+    "role": "customer",
+    "created_at": "2026-05-05T11:36:36.086Z",
+    "refresh_tokens": [],
+    "address": {
+      "province": "Central Java",
+      "city": "Jakarta",
+      "district": "Gambir",
+      "detail": "Jl. Kenanga no 1"
+    }
+  },
+  {
+    "id": "b1a2c3d4-e5f6-7890-abcd-ef1234567890",
+    "email": "admin@qwerty.com",
+    "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "full_name": "Admin QWERTY",
+    "role": "admin",
+    "created_at": "2026-01-01T00:00:00.000Z",
+    "refresh_tokens": [
+      "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImIxYTJjM2Q0LWU1ZjYtNzg5MC1hYmNkLWVmMTIzNDU2Nzg5MCIsImlhdCI6MTc3ODAzNTMxMiwiZXhwIjoxNzc4NjQwMTEyfQ.oQThvublHS31bMiLtRAnuK4xsMmBAGSA6y48S5Nw0ss"
+    ]
+  }
+]

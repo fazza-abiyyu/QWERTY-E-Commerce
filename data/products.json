@@ -1,0 +1,232 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Classic White Sneakers",
+    "category": "Footwear",
+    "description": "Minimalist white sneakers for everyday wear. Super comfortable and stylish.",
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "SNEAK-WHT-40", "name": "Size 40", "price": 500000, "stock": 10, "weight": 800 },
+      { "sku": "SNEAK-WHT-41", "name": "Size 41", "price": 500000, "stock": 15, "weight": 800 },
+      { "sku": "SNEAK-WHT-42", "name": "Size 42", "price": 500000, "stock": 8, "weight": 800 },
+      { "sku": "SNEAK-WHT-43", "name": "Size 43", "price": 500000, "stock": 5, "weight": 800 }
+    ],
+    "created_at": "2024-05-01T10:00:00Z",
+    "updated_at": "2024-05-01T10:00:00Z"
+  },
+  {
+    "id": "prod-002",
+    "name": "Premium Denim Jacket",
+    "category": "Outerwear",
+    "description": "High quality raw denim jacket. Durable and timeless design.",
+    "image_url": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "JKT-DNM-S", "name": "Small", "price": 850000, "stock": 8, "weight": 1200 },
+      { "sku": "JKT-DNM-M", "name": "Medium", "price": 850000, "stock": 5, "weight": 1200 },
+      { "sku": "JKT-DNM-L", "name": "Large", "price": 850000, "stock": 3, "weight": 1200 },
+      { "sku": "JKT-DNM-XL", "name": "X-Large", "price": 850000, "stock": 2, "weight": 1200 }
+    ],
+    "created_at": "2024-05-02T10:00:00Z",
+    "updated_at": "2024-05-02T10:00:00Z"
+  },
+  {
+    "id": "prod-003",
+    "name": "Organic Cotton T-Shirt",
+    "category": "Tops",
+    "description": "100% organic cotton basic tee. Breathable and soft.",
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "TSH-BLK-S", "name": "Black - S", "price": 150000, "stock": 20, "weight": 200 },
+      { "sku": "TSH-BLK-M", "name": "Black - M", "price": 150000, "stock": 25, "weight": 200 },
+      { "sku": "TSH-BLK-L", "name": "Black - L", "price": 150000, "stock": 15, "weight": 200 },
+      { "sku": "TSH-WHT-S", "name": "White - S", "price": 150000, "stock": 18, "weight": 200 },
+      { "sku": "TSH-WHT-M", "name": "White - M", "price": 150000, "stock": 18, "weight": 200 },
+      { "sku": "TSH-WHT-L", "name": "White - L", "price": 150000, "stock": 10, "weight": 200 },
+      { "sku": "TSH-GRY-M", "name": "Grey - M", "price": 150000, "stock": 12, "weight": 200 }
+    ],
+    "created_at": "2024-05-03T10:00:00Z",
+    "updated_at": "2024-05-03T10:00:00Z"
+  },
+  {
+    "id": "prod-004",
+    "name": "Slim Fit Chinos",
+    "category": "Bottoms",
+    "description": "Tailored slim fit chinos in stretch cotton twill. Versatile and comfortable.",
+    "image_url": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "CHN-BLK-30", "name": "Black - 30", "price": 380000, "stock": 12, "weight": 500 },
+      { "sku": "CHN-BLK-32", "name": "Black - 32", "price": 380000, "stock": 10, "weight": 500 },
+      { "sku": "CHN-BLK-34", "name": "Black - 34", "price": 380000, "stock": 5, "weight": 500 },
+      { "sku": "CHN-KHK-30", "name": "Khaki - 30", "price": 380000, "stock": 8, "weight": 500 },
+      { "sku": "CHN-KHK-32", "name": "Khaki - 32", "price": 380000, "stock": 7, "weight": 500 },
+      { "sku": "CHN-NVY-32", "name": "Navy - 32", "price": 380000, "stock": 6, "weight": 500 }
+    ],
+    "created_at": "2024-05-04T10:00:00Z",
+    "updated_at": "2024-05-04T10:00:00Z"
+  },
+  {
+    "id": "prod-005",
+    "name": "Wool Blend Overcoat",
+    "category": "Outerwear",
+    "description": "Structured wool blend overcoat with notch lapels. Made for cooler weather.",
+    "image_url": "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "COAT-GRY-M", "name": "Grey - M", "price": 1250000, "stock": 4, "weight": 1800 },
+      { "sku": "COAT-GRY-L", "name": "Grey - L", "price": 1250000, "stock": 3, "weight": 1800 },
+      { "sku": "COAT-BLK-M", "name": "Black - M", "price": 1250000, "stock": 2, "weight": 1800 }
+    ],
+    "created_at": "2024-05-05T10:00:00Z",
+    "updated_at": "2024-05-05T10:00:00Z"
+  },
+  {
+    "id": "prod-006",
+    "name": "Leather Belt",
+    "category": "Accessories",
+    "description": "Full grain leather belt with brushed metal buckle. Handcrafted finish.",
+    "image_url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "BLT-BLK-S", "name": "Black - S", "price": 220000, "stock": 15, "weight": 200 },
+      { "sku": "BLT-BLK-M", "name": "Black - M", "price": 220000, "stock": 20, "weight": 200 },
+      { "sku": "BLT-BRN-M", "name": "Brown - M", "price": 220000, "stock": 12, "weight": 200 },
+      { "sku": "BLT-BRN-L", "name": "Brown - L", "price": 220000, "stock": 8, "weight": 200 }
+    ],
+    "created_at": "2024-05-06T10:00:00Z",
+    "updated_at": "2024-05-06T10:00:00Z"
+  },
+  {
+    "id": "prod-007",
+    "name": "Canvas Tote Bag",
+    "category": "Accessories",
+    "description": "Heavy duty canvas tote with reinforced handles. Fits a 15\" laptop.",
+    "image_url": "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "TOTE-NAT", "name": "Natural", "price": 180000, "stock": 30, "weight": 400 },
+      { "sku": "TOTE-BLK", "name": "Black", "price": 180000, "stock": 22, "weight": 400 },
+      { "sku": "TOTE-NVY", "name": "Navy", "price": 180000, "stock": 15, "weight": 400 }
+    ],
+    "created_at": "2024-05-07T10:00:00Z",
+    "updated_at": "2024-05-07T10:00:00Z"
+  },
+  {
+    "id": "prod-008",
+    "name": "Ribbed Knit Beanie",
+    "category": "Accessories",
+    "description": "Soft merino wool ribbed beanie. Warm and lightweight.",
+    "image_url": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "BNE-BLK", "name": "Black", "price": 95000, "stock": 40, "weight": 80 },
+      { "sku": "BNE-GRY", "name": "Grey", "price": 95000, "stock": 35, "weight": 80 },
+      { "sku": "BNE-NVY", "name": "Navy", "price": 95000, "stock": 20, "weight": 80 }
+    ],
+    "created_at": "2024-05-08T10:00:00Z",
+    "updated_at": "2024-05-08T10:00:00Z"
+  },
+  {
+    "id": "prod-009",
+    "name": "Chelsea Leather Boots",
+    "category": "Footwear",
+    "description": "Sleek Chelsea boots in premium leather with elastic side panels.",
+    "image_url": "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "BOOT-BRN-41", "name": "Brown - 41", "price": 1200000, "stock": 5, "weight": 1400 },
+      { "sku": "BOOT-BRN-42", "name": "Brown - 42", "price": 1200000, "stock": 8, "weight": 1400 },
+      { "sku": "BOOT-BLK-42", "name": "Black - 42", "price": 1200000, "stock": 6, "weight": 1400 }
+    ],
+    "created_at": "2024-05-09T10:00:00Z",
+    "updated_at": "2024-05-09T10:00:00Z"
+  },
+  {
+    "id": "prod-010",
+    "name": "Heavyweight Hoodie",
+    "category": "Outerwear",
+    "description": "Thick fleece hoodie with a relaxed fit. Perfect for layering.",
+    "image_url": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "HUD-GRY-M", "name": "Grey - M", "price": 450000, "stock": 15, "weight": 800 },
+      { "sku": "HUD-GRY-L", "name": "Grey - L", "price": 450000, "stock": 12, "weight": 800 },
+      { "sku": "HUD-BLK-M", "name": "Black - M", "price": 450000, "stock": 10, "weight": 800 }
+    ],
+    "created_at": "2024-05-10T10:00:00Z",
+    "updated_at": "2024-05-10T10:00:00Z"
+  },
+  {
+    "id": "prod-011",
+    "name": "Piqué Polo Shirt",
+    "category": "Tops",
+    "description": "Classic fit polo shirt in breathable cotton piqué fabric.",
+    "image_url": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "POLO-WHT-M", "name": "White - M", "price": 280000, "stock": 20, "weight": 250 },
+      { "sku": "POLO-NVY-M", "name": "Navy - M", "price": 280000, "stock": 18, "weight": 250 },
+      { "sku": "POLO-BLK-L", "name": "Black - L", "price": 280000, "stock": 15, "weight": 250 }
+    ],
+    "created_at": "2024-05-11T10:00:00Z",
+    "updated_at": "2024-05-11T10:00:00Z"
+  },
+  {
+    "id": "prod-012",
+    "name": "Relaxed Cargo Pants",
+    "category": "Bottoms",
+    "description": "Functional cargo pants with multiple pockets and a comfortable relaxed cut.",
+    "image_url": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "CRG-OLV-32", "name": "Olive - 32", "price": 520000, "stock": 10, "weight": 600 },
+      { "sku": "CRG-BLK-32", "name": "Black - 32", "price": 520000, "stock": 12, "weight": 600 }
+    ],
+    "created_at": "2024-05-12T10:00:00Z",
+    "updated_at": "2024-05-12T10:00:00Z"
+  },
+  {
+    "id": "prod-013",
+    "name": "Aviator Sunglasses",
+    "category": "Accessories",
+    "description": "Classic aviator sunglasses with polarized lenses and a lightweight metal frame.",
+    "image_url": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "SUN-GLD", "name": "Gold Frame", "price": 350000, "stock": 25, "weight": 50 },
+      { "sku": "SUN-SLV", "name": "Silver Frame", "price": 350000, "stock": 20, "weight": 50 }
+    ],
+    "created_at": "2024-05-13T10:00:00Z",
+    "updated_at": "2024-05-13T10:00:00Z"
+  },
+  {
+    "id": "prod-014",
+    "name": "Minimalist Watch",
+    "category": "Accessories",
+    "description": "Understated timepiece with a clean dial and genuine leather strap.",
+    "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "WTC-SLV-BLK", "name": "Silver/Black", "price": 1850000, "stock": 10, "weight": 150 },
+      { "sku": "WTC-GLD-BRN", "name": "Gold/Brown", "price": 1950000, "stock": 5, "weight": 150 }
+    ],
+    "created_at": "2024-05-14T10:00:00Z",
+    "updated_at": "2024-05-14T10:00:00Z"
+  },
+  {
+    "id": "prod-015",
+    "name": "Leather Duffle Bag",
+    "category": "Accessories",
+    "description": "Spacious duffle bag for weekend trips, crafted from high-quality pebble grain leather.",
+    "image_url": "https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "DUF-BRN", "name": "Tan Brown", "price": 2400000, "stock": 4, "weight": 2500 },
+      { "sku": "DUF-BLK", "name": "Classic Black", "price": 2400000, "stock": 6, "weight": 2500 }
+    ],
+    "created_at": "2024-05-15T10:00:00Z",
+    "updated_at": "2024-05-15T10:00:00Z"
+  },
+  {
+    "id": "prod-016",
+    "name": "Linen Blend Shirt",
+    "category": "Tops",
+    "description": "Lightweight linen-cotton blend shirt with a band collar. Ideal for warm weather.",
+    "image_url": "https://images.unsplash.com/photo-1598033129183-c4f50c717678?q=80&w=800&auto=format&fit=crop",
+    "variants": [
+      { "sku": "LIN-WHT-M", "name": "White - M", "price": 320000, "stock": 15, "weight": 200 },
+      { "sku": "LIN-BGE-M", "name": "Beige - M", "price": 320000, "stock": 12, "weight": 200 },
+      { "sku": "LIN-WHT-L", "name": "White - L", "price": 320000, "stock": 10, "weight": 200 }
+    ],
+    "created_at": "2024-05-16T10:00:00Z",
+    "updated_at": "2024-05-16T10:00:00Z"
+  }
+]
