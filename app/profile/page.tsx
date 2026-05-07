@@ -112,6 +112,7 @@ export default function ProfilePage() {
             <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
               type="text"
+              data-testid="profile-name-input"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               placeholder="Your full name"
@@ -127,6 +128,7 @@ export default function ProfilePage() {
             <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input
               type="email"
+              data-testid="profile-email-input"
               value={user.email}
               disabled
               className="w-full pl-11 pr-4 py-3.5 bg-[#f7f7f7] rounded-xl text-[14px] text-gray-400 cursor-not-allowed"
@@ -145,6 +147,7 @@ export default function ProfilePage() {
               <label className="text-[12px] font-medium text-gray-500 block mb-1.5">Province</label>
               <input
                 type="text"
+                data-testid="profile-province-input"
                 value={province}
                 onChange={(e) => setProvince(e.target.value)}
                 placeholder="e.g. Jawa Barat"
@@ -156,6 +159,7 @@ export default function ProfilePage() {
                 <label className="text-[12px] font-medium text-gray-500 block mb-1.5">City / Kabupaten</label>
                 <input
                   type="text"
+                  data-testid="profile-city-input"
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                   placeholder="e.g. Bandung"
@@ -166,6 +170,7 @@ export default function ProfilePage() {
                 <label className="text-[12px] font-medium text-gray-500 block mb-1.5">Kecamatan / Desa</label>
                 <input
                   type="text"
+                  data-testid="profile-district-input"
                   value={district}
                   onChange={(e) => setDistrict(e.target.value)}
                   placeholder="e.g. Coblong"
@@ -176,6 +181,7 @@ export default function ProfilePage() {
             <div>
               <label className="text-[12px] font-medium text-gray-500 block mb-1.5">Detail Alamat</label>
               <textarea
+                data-testid="profile-detail-input"
                 value={detail}
                 onChange={(e) => setDetail(e.target.value)}
                 placeholder="Nama jalan, nomor rumah, RT/RW, patokan..."
@@ -202,6 +208,7 @@ export default function ProfilePage() {
         <button
           type="submit"
           disabled={loading || !hasChanges}
+          data-testid="profile-save-button"
           className="w-full flex items-center justify-center gap-2 py-3.5 bg-[#111] text-white text-[13px] font-bold rounded-full hover:bg-[#333] disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed transition-all active:scale-[0.98]"
         >
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}

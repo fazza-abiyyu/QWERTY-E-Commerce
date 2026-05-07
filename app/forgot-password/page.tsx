@@ -57,14 +57,14 @@ export default function ForgotPasswordPage() {
         </div>
 
         {message && (
-          <div className={`p-4 rounded-xl text-sm font-medium mb-6 ${
+          <div data-testid="forgot-password-message" className={`p-4 rounded-xl text-sm font-medium mb-6 ${
             message.type === 'success' ? 'bg-gray-900 text-white' : 'bg-red-50 text-red-600'
           }`}>
             {message.text}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} data-testid="forgot-password-form" className="space-y-4">
           <div>
             <label htmlFor="email" className="block text-[12px] font-bold text-gray-400 uppercase tracking-wider mb-1.5 ml-1">
               Email Address
@@ -75,6 +75,7 @@ export default function ForgotPasswordPage() {
                 id="email"
                 type="email"
                 required
+                data-testid="forgot-password-email-input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="name@example.com"
@@ -86,6 +87,7 @@ export default function ForgotPasswordPage() {
           <button
             type="submit"
             disabled={loading}
+            data-testid="forgot-password-submit-button"
             className="w-full py-3.5 bg-gray-900 text-white rounded-2xl text-[14px] font-bold hover:bg-black transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed mt-2 active:scale-95"
           >
             {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Send OTP'}

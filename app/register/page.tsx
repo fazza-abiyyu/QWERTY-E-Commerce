@@ -105,6 +105,7 @@ export default function RegisterPage() {
             <input
               type="text"
               required
+              data-testid="register-name-input"
               value={fullName}
               onChange={e => setFullName(e.target.value)}
               onBlur={() => handleBlur('fullName')}
@@ -127,6 +128,7 @@ export default function RegisterPage() {
             <input
               type="email"
               required
+              data-testid="register-email-input"
               value={email}
               onChange={e => setEmail(e.target.value)}
               onBlur={() => handleBlur('email')}
@@ -150,6 +152,7 @@ export default function RegisterPage() {
               <input
                 type={showPassword ? 'text' : 'password'}
                 required
+                data-testid="register-password-input"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
                 onBlur={() => handleBlur('password')}
@@ -170,8 +173,8 @@ export default function RegisterPage() {
             {/* Password Requirements */}
             <div className="mt-3 grid grid-cols-2 gap-2 px-1">
               {requirements.map((req) => (
-                <div key={req.id} className="flex items-center gap-1.5">
-                  <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center transition-colors ${
+                <div key={req.id} data-testid={`pass-req-${req.id}`} className="flex items-center gap-1.5">
+                  <div data-testid={`pass-req-icon-${req.id}`} className={`w-3.5 h-3.5 rounded-full flex items-center justify-center transition-colors ${
                     req.met ? 'bg-gray-900' : 'bg-gray-100'
                   }`}>
                     {req.met ? <Check className="w-2.5 h-2.5 text-white" /> : <div className="w-1 h-1 rounded-full bg-gray-300" />}
@@ -191,6 +194,7 @@ export default function RegisterPage() {
             <input
               type="password"
               required
+              data-testid="register-confirm-password-input"
               value={confirmPassword}
               onChange={e => setConfirmPassword(e.target.value)}
               onBlur={() => handleBlur('confirmPassword')}
@@ -211,6 +215,7 @@ export default function RegisterPage() {
           <button
             type="submit"
             disabled={loading}
+            data-testid="register-submit-button"
             className="w-full py-3.5 bg-gray-900 text-white text-sm font-bold rounded-xl hover:bg-black transition-all mt-4 active:scale-[0.98] shadow-lg shadow-gray-200"
           >
             {loading ? 'Creating account...' : 'Create account'}

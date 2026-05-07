@@ -54,7 +54,7 @@ export default async function AdminDashboard() {
             <DollarSign className="w-5 h-5 text-gray-900" />
           </div>
           <p className="text-[12px] font-bold text-gray-400 uppercase tracking-wider">Revenue</p>
-          <h3 className="text-xl font-black text-gray-900 mt-1">Rp {totalRevenue.toLocaleString('id-ID')}</h3>
+          <h3 data-testid="admin-stat-revenue" className="text-xl font-black text-gray-900 mt-1">Rp {totalRevenue.toLocaleString('id-ID')}</h3>
         </div>
 
         <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
@@ -62,7 +62,7 @@ export default async function AdminDashboard() {
             <ShoppingBag className="w-5 h-5 text-gray-900" />
           </div>
           <p className="text-[12px] font-bold text-gray-400 uppercase tracking-wider">Total Orders</p>
-          <h3 className="text-xl font-black text-gray-900 mt-1">{orders.length}</h3>
+          <h3 data-testid="admin-stat-orders" className="text-xl font-black text-gray-900 mt-1">{orders.length}</h3>
         </div>
 
         <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
@@ -70,7 +70,7 @@ export default async function AdminDashboard() {
             <Clock className="w-5 h-5 text-gray-900" />
           </div>
           <p className="text-[12px] font-bold text-gray-400 uppercase tracking-wider">Pending</p>
-          <h3 className="text-xl font-black text-gray-900 mt-1">{pendingPayments}</h3>
+          <h3 data-testid="admin-stat-pending" className="text-xl font-black text-gray-900 mt-1">{pendingPayments}</h3>
         </div>
 
         <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">

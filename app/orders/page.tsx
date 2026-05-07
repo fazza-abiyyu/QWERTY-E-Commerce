@@ -65,18 +65,18 @@ export default function OrdersPage() {
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
                 <div>
-                  <p className="text-[13px] font-bold text-[#111] font-mono">{order.id}</p>
+                  <p data-testid={`order-id-${order.id}`} className="text-[13px] font-bold text-[#111] font-mono">{order.id}</p>
                   <p className="text-[12px] text-gray-400 mt-0.5">
                     {new Date(order.created_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
                   </p>
                 </div>
-                <span className={`text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full w-fit ${statusColors[order.status] || 'bg-gray-100 text-gray-500'}`}>
+                <span data-testid={`order-status-${order.id}`} className={`text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full w-fit ${statusColors[order.status] || 'bg-gray-100 text-gray-500'}`}>
                   {order.status}
                 </span>
               </div>
               <div className="flex items-center justify-between pt-3 border-t border-gray-200/80">
                 <p className="text-[13px] text-gray-400">{order.items.length} item{order.items.length > 1 ? 's' : ''}</p>
-                <p className="text-[15px] font-bold text-[#111]">Rp {order.total_amount.toLocaleString('id-ID')}</p>
+                <p data-testid={`order-total-${order.id}`} className="text-[15px] font-bold text-[#111]">Rp {order.total_amount.toLocaleString('id-ID')}</p>
               </div>
             </Link>
           ))}

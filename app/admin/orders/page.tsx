@@ -74,10 +74,10 @@ export default async function AdminOrdersPage({
             </thead>
             <tbody className="divide-y divide-gray-100">
               {filteredOrders.map(order => (
-                <tr key={order.id} className="hover:bg-gray-50 transition-colors">
+                <tr key={order.id} data-testid={`admin-order-row-${order.id}`} className="hover:bg-gray-50 transition-colors">
                   <td className="px-6 py-4">
                     <div className="flex flex-col gap-1">
-                      <span className="font-bold text-gray-900 text-[14px]">{order.id}</span>
+                      <span data-testid={`admin-order-id-${order.id}`} className="font-bold text-gray-900 text-[14px]">{order.id}</span>
                       <div className="flex items-center gap-1.5 text-[11px] text-gray-400">
                         <Calendar className="w-3 h-3" />
                         {new Date(order.created_at).toLocaleDateString('id-ID', {
@@ -112,7 +112,7 @@ export default async function AdminOrdersPage({
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex flex-col">
-                      <span className="font-black text-gray-900 text-[14px]">
+                      <span data-testid={`admin-order-total-${order.id}`} className="font-black text-gray-900 text-[14px]">
                         Rp {order.total_amount.toLocaleString('id-ID')}
                       </span>
                       <div className="flex items-center gap-1 text-[10px] text-gray-400 mt-0.5">

@@ -96,12 +96,12 @@ function ResetPasswordForm() {
       </div>
 
       {status?.type === 'error' && (
-        <div className="p-4 rounded-xl bg-red-50 text-red-600 text-sm font-medium mb-6">
+        <div data-testid="reset-password-error" className="p-4 rounded-xl bg-red-50 text-red-600 text-sm font-medium mb-6">
           {status.text}
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} data-testid="reset-password-form" className="space-y-4">
         <div>
           <label className="block text-[12px] font-bold text-gray-400 uppercase tracking-wider mb-1.5 ml-1">
             OTP Code
@@ -111,6 +111,7 @@ function ResetPasswordForm() {
             <input
               type="text"
               required
+              data-testid="reset-password-otp-input"
               value={formData.otp}
               onChange={(e) => setFormData({ ...formData, otp: e.target.value })}
               placeholder="Enter 6-digit code"
@@ -129,6 +130,7 @@ function ResetPasswordForm() {
             <input
               type={showPassword ? 'text' : 'password'}
               required
+              data-testid="reset-password-new-input"
               value={formData.new_password}
               onChange={(e) => setFormData({ ...formData, new_password: e.target.value })}
               placeholder="Secure password"
@@ -145,8 +147,8 @@ function ResetPasswordForm() {
           
           <div className="mt-3 grid grid-cols-2 gap-2 px-1">
             {requirements.map((req) => (
-              <div key={req.id} className="flex items-center gap-1.5">
-                <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center transition-colors ${
+              <div key={req.id} data-testid={`reset-pass-req-${req.id}`} className="flex items-center gap-1.5">
+                <div data-testid={`reset-pass-req-icon-${req.id}`} className={`w-3.5 h-3.5 rounded-full flex items-center justify-center transition-colors ${
                   req.met ? 'bg-gray-900' : 'bg-gray-100'
                 }`}>
                   {req.met ? <Check className="w-2.5 h-2.5 text-white" /> : <div className="w-1 h-1 rounded-full bg-gray-300" />}
@@ -170,6 +172,7 @@ function ResetPasswordForm() {
             <input
               type="password"
               required
+              data-testid="reset-password-confirm-input"
               value={formData.confirm_password}
               onChange={(e) => setFormData({ ...formData, confirm_password: e.target.value })}
               placeholder="Repeat password"
@@ -190,6 +193,7 @@ function ResetPasswordForm() {
         <button
           type="submit"
           disabled={!canSubmit || loading}
+          data-testid="reset-password-submit-button"
           className="w-full py-3.5 bg-gray-900 text-white rounded-2xl text-[14px] font-bold hover:bg-black disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed transition-all mt-4 active:scale-[0.98]"
         >
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Reset Password'}

@@ -89,9 +89,9 @@ export default function EmailerSimulatorPage() {
             <p className="text-[12px] text-gray-400 mt-1">Try to request a forgot password OTP to see it here.</p>
           </div>
         ) : (
-          <div className="space-y-4">
+          <div data-testid="email-inbox" className="space-y-4">
             {emails.map((email) => (
-              <div key={email.id} className="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div key={email.id} data-testid={`email-item-${email.id}`} className="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white text-[12px] font-bold">
@@ -99,7 +99,7 @@ export default function EmailerSimulatorPage() {
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="text-sm font-black tracking-tight">{email.to}</span>
+                        <span data-testid={`email-to-${email.id}`} className="text-sm font-black tracking-tight">{email.to}</span>
                         <span className="px-2 py-0.5 bg-gray-100 text-[10px] font-bold rounded-md uppercase text-gray-500">To</span>
                       </div>
                       <div className="flex items-center gap-3 mt-0.5">
@@ -113,8 +113,8 @@ export default function EmailerSimulatorPage() {
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-5 border border-gray-100">
-                  <h4 className="text-[13px] font-black text-gray-900 mb-2">{email.subject}</h4>
-                  <p className="text-[13px] text-gray-600 leading-relaxed whitespace-pre-wrap font-medium">
+                  <h4 data-testid={`email-subject-${email.id}`} className="text-[13px] font-black text-gray-900 mb-2">{email.subject}</h4>
+                  <p data-testid={`email-body-${email.id}`} className="text-[13px] text-gray-600 leading-relaxed whitespace-pre-wrap font-medium">
                     {email.body}
                   </p>
                 </div>
