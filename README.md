@@ -87,6 +87,15 @@ The application runs on `http://localhost:3000`.
 
 ---
 
+## 🧪 QA & Testing
+
+This project is built with high testability in mind. We use consistent `data-testid` attributes across all forms and critical components to ensure stable automated testing.
+
+- **Automation Repository**: [Katalon Studio Project](https://github.com/fazza-abiyyu/KATALON_QWERTY)
+- **Test Case & Scenarios**: [Google Sheets Documentation](https://docs.google.com/spreadsheets/d/1VZ4eQ-brBA4YSWC1y6cMlEoiesjL65XsEZ4lJBDL4HI/edit?usp=sharing)
+
+---
+
 ## 📂 Project Structure
 
 - `/app`: Next.js App Router (Pages & API).
