@@ -6,6 +6,7 @@ const orderDb = new JsonHandler<Order>('orders.json');
 
 export const OrderService = {
   async getAllOrders(): Promise<Order[]> {
+    await this.autoExpireOrders();
     return await orderDb.readAll();
   },
 
@@ -14,6 +15,7 @@ export const OrderService = {
   },
 
   async getOrdersByUser(user_id: string): Promise<Order[]> {
+    await this.autoExpireOrders();
     const all = await orderDb.readAll();
     return all.filter(o => o.user_id === user_id);
   },
@@ -26,7 +28,8 @@ export const OrderService = {
       status: 'pending',
       payment_url: `/midtrans-simulator?order_id=${orderId}`,
       created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
+      updated_at: new Date().toISOString(),
+      expires_at: new Date(Date.now() + 1 * 60 * 60 * 1000).toISOString() // 1 hour
     };
 
     await orderDb.insert(newOrder);
@@ -93,5 +96,26 @@ export const OrderService = {
   async getOrderByPaymentCode(payment_code: string): Promise<Order | undefined> {
     const all = await orderDb.readAll();
     return all.find(o => o.payment_code === payment_code);
+  },
+
+  async autoExpireOrders(): Promise<void> {
+    const allOrders = await orderDb.readAll();
+    const now = new Date();
+    let changed = false;
+
+    for (const order of allOrders) {
+      if (order.status === 'pending' && order.expires_at) {
+        const expiryDate = new Date(order.expires_at);
+        if (now > expiryDate) {
+          order.status = 'cancelled';
+          order.updated_at = now.toISOString();
+          changed = true;
+        }
+      }
+    }
+
+    if (changed) {
+      await orderDb.writeAll(allOrders);
+    }
   }
 };

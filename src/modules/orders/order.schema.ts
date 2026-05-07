@@ -19,6 +19,7 @@ export interface Order {
   payment_code?: string; // The generated VA number or payment code
   created_at: string;
   updated_at: string;
+  expires_at?: string;
 }
 
 export interface PaymentWebhookPayload {
