@@ -80,6 +80,7 @@ export default function Header() {
                 <div className="relative" onClick={(e) => e.stopPropagation()}>
                   <button 
                     onClick={() => setShowDropdown(!showDropdown)}
+                    data-testid="user-profile-button"
                     className="flex items-center gap-2 p-1 rounded-full hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-100"
                   >
                     <div className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center text-white shadow-sm text-[12px] font-bold">
@@ -97,21 +98,21 @@ export default function Header() {
                         <p className="text-[11px] text-gray-400 truncate mt-0.5">{user.email}</p>
                       </div>
                       
-                      <Link href="/profile" className="block px-4 py-2.5 text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors">
+                      <Link href="/profile" data-testid="profile-link" className="block px-4 py-2.5 text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors">
                         Profile Settings
                       </Link>
                       
                       {user.role === 'admin' ? (
-                        <Link href="/admin" className="block px-4 py-2.5 text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors">
+                        <Link href="/admin" data-testid="admin-link" className="block px-4 py-2.5 text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors">
                           Admin Dashboard
                         </Link>
                       ) : (
-                        <Link href="/orders" className="block px-4 py-2.5 text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors">
+                        <Link href="/orders" data-testid="orders-link" className="block px-4 py-2.5 text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors">
                           My Orders
                         </Link>
                       )}
                       
-                      <button onClick={logout} className="w-full text-left px-4 py-2.5 text-[13px] font-bold text-red-500 hover:bg-red-50 transition-colors border-t border-gray-50">
+                      <button onClick={logout} data-testid="logout-button" className="w-full text-left px-4 py-2.5 text-[13px] font-bold text-red-500 hover:bg-red-50 transition-colors border-t border-gray-50">
                         Logout
                       </button>
                     </div>
