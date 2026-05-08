@@ -80,5 +80,13 @@
     "full_name": "Lin Putra",
     "role": "customer",
     "created_at": "2026-05-08T05:36:24.860Z"
+  },
+  {
+    "id": "11b2dacb-6538-445f-bb7b-e3d358f4b845",
+    "email": "test1778221748589@qwerty.com",
+    "password": "a7305040bcd36ae837996453c00d24e9360c0f168ef7d9bded576c9f19a5ebc6",
+    "full_name": "[Fazza, Lin, Kai, Zhen, Alya][new Random().nextInt(firstNames.size())] [Chen, Wijaya, Putra, Li, Santoso][new Random().nextInt(lastNames.size())]",
+    "role": "customer",
+    "created_at": "2026-05-08T06:29:15.904Z"
   }
 ]
