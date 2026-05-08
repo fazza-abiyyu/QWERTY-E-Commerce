@@ -45,5 +45,13 @@
       "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYzMTcxMmMzLTE0NDYtNDM5OC1hZWMxLTJlM2FiZTU0YjFlMSIsImlhdCI6MTc3ODEzMTE5NiwiZXhwIjoxNzc4NzM1OTk2fQ.ugGizp2DVuuFpmsJBFGOkIX0d6w6OVnFSr0OscYbvjo",
       "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYzMTcxMmMzLTE0NDYtNDM5OC1hZWMxLTJlM2FiZTU0YjFlMSIsImlhdCI6MTc3ODEzMTMzNSwiZXhwIjoxNzc4NzM2MTM1fQ._hZyvCLylOVi2osuRyKx4H-qFyc2M7_cX1r49DWqrEE"
     ]
+  },
+  {
+    "id": "ddb4359e-519b-412b-9dde-eabfa76ab3d0",
+    "email": "test02@qwery.com.com",
+    "password": "a7305040bcd36ae837996453c00d24e9360c0f168ef7d9bded576c9f19a5ebc6",
+    "full_name": "User Test 2",
+    "role": "customer",
+    "created_at": "2026-05-08T05:28:40.894Z"
   }
 ]
