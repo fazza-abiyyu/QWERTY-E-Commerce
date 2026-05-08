@@ -159,5 +159,13 @@
     "refresh_tokens": [
       "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ImYxM2FhY2E2LWE2M2QtNDBiYy1iYzE2LTQ4MjQ3ZWI0ODQ4OCIsImlhdCI6MTc3ODI4NDQzOCwiZXhwIjoxNzc4ODg5MjM4fQ.5hwPRwhlmRS8z7XSRDudMlloaXPpIAjYb-j0ddEsgWk"
     ]
+  },
+  {
+    "id": "5d648988-9561-4d70-bb36-60b6106b8bfc",
+    "email": "test1778284612476@qwerty.com",
+    "password": "800ea4ec16df3229ceeceeedaf34f0ae97877a2ec9889de766073d977f87f800",
+    "full_name": "[Fazza, Lin, Kai, Zhen, Alya][new Random().nextInt(firstNames.size())] [Chen, Wijaya, Putra, Li, Santoso][new Random().nextInt(lastNames.size())]",
+    "role": "customer",
+    "created_at": "2026-05-08T23:57:03.655Z"
   }
 ]
