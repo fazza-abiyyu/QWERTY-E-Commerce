@@ -142,7 +142,7 @@ export default function AtmSimulator() {
                 </div>
                 <div className="flex justify-between items-center pb-4 border-b border-gray-200 border-dashed">
                   <span className="text-[13px] text-gray-500 font-medium">No. VA</span>
-                  <span className="text-[14px] font-mono font-bold text-gray-900" data-testid="payment-va-number">{orderData.payment_code}</span>
+                  <span id="payment-va-number" className="text-[14px] font-mono font-bold text-gray-900" data-testid="payment-va-number">{orderData.payment_code}</span>
                 </div>
                 <div className="flex justify-between items-center pb-2">
                   <span className="text-[13px] text-gray-500 font-medium">Total Tagihan</span>
