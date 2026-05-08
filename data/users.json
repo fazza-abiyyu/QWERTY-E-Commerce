@@ -166,6 +166,9 @@
     "password": "800ea4ec16df3229ceeceeedaf34f0ae97877a2ec9889de766073d977f87f800",
     "full_name": "[Fazza, Lin, Kai, Zhen, Alya][new Random().nextInt(firstNames.size())] [Chen, Wijaya, Putra, Li, Santoso][new Random().nextInt(lastNames.size())]",
     "role": "customer",
-    "created_at": "2026-05-08T23:57:03.655Z"
+    "created_at": "2026-05-08T23:57:03.655Z",
+    "refresh_tokens": [
+      "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVkNjQ4OTg4LTk1NjEtNGQ3MC1iYjM2LTYwYjYxMDZiOGJmYyIsImlhdCI6MTc3ODI4NDYyNywiZXhwIjoxNzc4ODg5NDI3fQ.rAGw1Xnz73ahDs0M6mylnzSOKOc3t4Byp1tm4shavCI"
+    ]
   }
 ]
