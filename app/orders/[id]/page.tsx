@@ -92,7 +92,7 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
                   <span className="text-[12px] font-bold text-gray-900 bg-gray-200/50 px-2 py-1 rounded uppercase">
                     {order.payment_method?.replace('_', ' ')}
                   </span>
-                  <span id="payment-va-number" className="font-mono font-black text-lg tracking-tight text-gray-900" data-testid="payment-va-number">
+                  <span id="order-va-number" className="font-mono font-black text-lg tracking-tight text-gray-900" data-testid="order-va-number">
                     {order.payment_code}
                   </span>
                   <button
