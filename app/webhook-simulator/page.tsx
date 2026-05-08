@@ -111,6 +111,7 @@ export default function AtmSimulator() {
                 onChange={(e) => setVaNumber(e.target.value.replace(/\D/g, ''))}
                 placeholder="Contoh: 8077123456"
                 className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl text-[16px] font-mono tracking-widest text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all mb-6"
+                data-testid="va-input"
               />
               
               {error && <div className="mb-6 p-4 bg-red-50 text-red-600 text-[13px] font-medium rounded-xl border border-red-100 flex items-center gap-2"><AlertCircle className="w-4 h-4 shrink-0" /> {error}</div>}
@@ -141,7 +142,7 @@ export default function AtmSimulator() {
                 </div>
                 <div className="flex justify-between items-center pb-4 border-b border-gray-200 border-dashed">
                   <span className="text-[13px] text-gray-500 font-medium">No. VA</span>
-                  <span className="text-[14px] font-mono font-bold text-gray-900">{orderData.payment_code}</span>
+                  <span className="text-[14px] font-mono font-bold text-gray-900" data-testid="payment-va-number">{orderData.payment_code}</span>
                 </div>
                 <div className="flex justify-between items-center pb-2">
                   <span className="text-[13px] text-gray-500 font-medium">Total Tagihan</span>

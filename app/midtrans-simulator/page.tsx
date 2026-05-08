@@ -168,7 +168,7 @@ function MidtransSimulatorContent() {
                 <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-6 text-center">
                   <p className="text-[12px] font-bold text-blue-800 uppercase tracking-wider mb-2">Virtual Account Number</p>
                   <div className="flex items-center justify-center gap-3 mb-2">
-                    <p className="text-3xl font-black text-gray-900 font-mono tracking-tight">{paymentCode}</p>
+                    <p className="text-3xl font-black text-gray-900 font-mono tracking-tight" data-testid="payment-va-number">{paymentCode}</p>
                   </div>
                   <button onClick={copyToClipboard} className="text-[12px] font-semibold text-blue-700 flex items-center justify-center gap-1 mx-auto hover:text-blue-800 transition-colors bg-white/60 px-3 py-1.5 rounded-full border border-blue-100 shadow-sm">
                     {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />} 
