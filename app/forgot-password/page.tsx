@@ -72,9 +72,9 @@ export default function ForgotPasswordPage() {
             <div className="relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" strokeWidth={2} />
               <input
+                id="forgot_password_email"
                 type="email"
                 required
-                id="email_field"
                 data-testid="forgot-password-email-input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

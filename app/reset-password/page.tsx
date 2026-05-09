@@ -111,7 +111,7 @@ function ResetPasswordForm() {
             <input
               type="text"
               required
-              id="otp_code_field"
+              id="reset_password_otp"
               data-testid="reset-password-otp-input"
               value={formData.otp}
               onChange={(e) => setFormData({ ...formData, otp: e.target.value })}
@@ -131,7 +131,7 @@ function ResetPasswordForm() {
             <input
               type={showPassword ? 'text' : 'password'}
               required
-              id="new_password_field"
+              id="reset_password_new"
               data-testid="reset-password-new-input"
               value={formData.new_password}
               onChange={(e) => setFormData({ ...formData, new_password: e.target.value })}
@@ -174,7 +174,7 @@ function ResetPasswordForm() {
             <input
               type="password"
               required
-              id="confirm_password_field"
+              id="reset_password_confirm"
               data-testid="reset-password-confirm-input"
               value={formData.confirm_password}
               onChange={(e) => setFormData({ ...formData, confirm_password: e.target.value })}
