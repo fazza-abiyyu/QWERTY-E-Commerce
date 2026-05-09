@@ -649,7 +649,9 @@
     "status": "pending",
     "payment_url": "/midtrans-simulator?order_id=ORD-1778286670380-891e",
     "created_at": "2026-05-09T00:31:10.380Z",
-    "updated_at": "2026-05-09T00:31:10.380Z",
-    "expires_at": "2026-05-09T01:31:10.380Z"
+    "updated_at": "2026-05-09T00:31:17.757Z",
+    "expires_at": "2026-05-09T01:31:10.380Z",
+    "payment_method": "bca_va",
+    "payment_code": "807774765943"
   }
 ]
