@@ -115,7 +115,13 @@ export default function EmailerSimulatorPage() {
                 <div className="bg-gray-50 rounded-2xl p-5 border border-gray-100">
                   <h4 data-testid={`email-subject-${email.id}`} className="text-[13px] font-black text-gray-900 mb-2">{email.subject}</h4>
                   <p data-testid={`email-body-${email.id}`} className="text-[13px] text-gray-600 leading-relaxed whitespace-pre-wrap font-medium">
-                    {email.body}
+                    {email.body.split(/(\d{6})/).map((part, i) => 
+                      /^\d{6}$/.test(part) ? (
+                        <span key={i} id="otp-code" data-testid="otp-code" className="font-bold text-gray-900 bg-gray-100 px-1.5 py-0.5 rounded border border-gray-200">
+                          {part}
+                        </span>
+                      ) : part
+                    )}
                   </p>
                 </div>
 
