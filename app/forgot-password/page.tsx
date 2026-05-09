@@ -72,9 +72,9 @@ export default function ForgotPasswordPage() {
             <div className="relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" strokeWidth={2} />
               <input
-                id="email"
                 type="email"
                 required
+                id="email_field"
                 data-testid="forgot-password-email-input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -87,6 +87,7 @@ export default function ForgotPasswordPage() {
           <button
             type="submit"
             disabled={loading}
+            id="btn_send_otp"
             data-testid="forgot-password-submit-button"
             className="w-full py-3.5 bg-gray-900 text-white rounded-2xl text-[14px] font-bold hover:bg-black transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed mt-2 active:scale-95"
           >
