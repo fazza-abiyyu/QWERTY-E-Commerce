@@ -80,7 +80,6 @@ function LoginForm() {
             <input
               type="email"
               required
-              id="login_email_input"
               data-testid="login-email-input"
               value={email}
               onChange={e => setEmail(e.target.value)}
@@ -98,7 +97,6 @@ function LoginForm() {
             <input
               type="password"
               required
-              id="login_password_input"
               data-testid="login-password-input"
               value={password}
               onChange={e => setPassword(e.target.value)}
@@ -109,7 +107,6 @@ function LoginForm() {
           <button
             type="submit"
             disabled={loading}
-            id="login_submit_button"
             data-testid="login-submit-button"
             className="w-full py-3 bg-gray-900 text-white text-sm font-semibold rounded-xl hover:bg-gray-800 disabled:opacity-50 transition-colors mt-2"
           >
