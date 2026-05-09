@@ -1,5 +1,12 @@
 [
   {
+    "id": "685b2fc7-8740-4ddf-89bf-0107f2b51377",
+    "to": "test01@qwerty.com",
+    "subject": "QWERTY - Password Reset OTP",
+    "body": "Halo, ini adalah kode OTP Anda untuk mereset password di QWERTY: 852109. Kode ini berlaku selama 10 menit.",
+    "sent_at": "2026-05-09T01:43:37.578Z"
+  },
+  {
     "id": "b9884e58-8b41-470c-a1cf-dce9a2919e2f",
     "to": "test01@qwerty.com",
     "subject": "QWERTY - Password Reset OTP",
